@@ -12,7 +12,8 @@ module.exports = {
     },
   },
   env: {
-    browser: true,
+    node: true,
+    browser: false,
     es2020: true,
   },
   extends: [

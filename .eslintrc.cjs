@@ -13,21 +13,23 @@ module.exports = {
   },
   env: {
     browser: true,
-    es2020: true
+    es2020: true,
   },
-  extends: ['eslint:recommended',
+  extends: [
+    'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
     'plugin:storybook/recommended',
+    'plugin:tailwindcss/recommended',
     'plugin:prettier/recommended', // Make sure this is always the last element in the array.
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: ['react-refresh'],
   rules: {
-    'react-refresh/only-export-components': 'warn'
-  }
+    'react-refresh/only-export-components': 'warn',
+  },
 };

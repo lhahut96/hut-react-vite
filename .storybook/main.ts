@@ -1,5 +1,4 @@
 import path from 'path';
-
 import type { StorybookConfig } from '@storybook/react-vite';
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
@@ -11,6 +10,7 @@ const config: StorybookConfig = {
     path.dirname(
       require.resolve(path.join('@storybook/addon-interactions', 'package.json')),
     ),
+    '@storybook/addon-mdx-gfm',
   ],
   framework: {
     name: path.dirname(

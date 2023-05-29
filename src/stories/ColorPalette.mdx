@@ -9,7 +9,6 @@ import themeConfig from '../../tailwind.config.js';
    {
       Object.entries(themeConfig?.theme?.extend?.colors).map(([k,v]) => 
          {
-            console.log(v)
             return <ColorItem title={k} colors={ { [k] : v }} />
          }
       )

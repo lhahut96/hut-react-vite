@@ -2,13 +2,6 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    colors: {
-      default: '#202020',
-      primary: '#80cdec',
-      secondary: '#004b76',
-      success: '#005c45',
-      warning: '#c44931',
-    },
     extend: {
       colors: {
         'dark-brand': '#262626',

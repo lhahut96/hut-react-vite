@@ -17,7 +17,7 @@ const Button = (props: Props) => {
     text: 'bg-transparent text-dark-brand hover:text-blue-500',
   };
 
-  const buttonClassName = `rounded-lg p-3 ${colorObject[colors]}`;
+  const buttonClassName = `rounded-lg p-3 transition ease-in-out ${colorObject[colors]}`;
 
   return (
     <button className={buttonClassName} onClick={onClick}>

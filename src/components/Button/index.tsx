@@ -1,15 +1,15 @@
-export enum ColorsProps {
+export enum TypeProps {
   PRIMARY = 'primary',
   TEXT = 'text',
 }
 
 type Props = {
-  colors: ColorsProps;
+  type: TypeProps;
   onClick?: () => void;
 };
 
 const Button = (props: Props) => {
-  const { colors, onClick } = props;
+  const { type, onClick } = props;
 
   const colorObject = {
     primary:
@@ -17,7 +17,7 @@ const Button = (props: Props) => {
     text: 'bg-transparent text-dark-brand hover:text-blue-500',
   };
 
-  const buttonClassName = `rounded-lg p-3 transition ease-in-out ${colorObject[colors]}`;
+  const buttonClassName = `rounded-lg p-3 transition ease-in-out ${colorObject[type]}`;
 
   return (
     <button className={buttonClassName} onClick={onClick}>

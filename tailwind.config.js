@@ -8,6 +8,8 @@ export default {
         'gray-brand': '#666666',
         'gray-brand-300': '#808080',
         'white-brand': '#F5F1EF',
+        error: '#E05252',
+        validate: '#1FAD66',
       },
     },
   },

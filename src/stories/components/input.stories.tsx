@@ -25,31 +25,31 @@ export default meta;
 type InputStory = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const DEFAULT: InputStory = {
+export const Default: InputStory = {
   args: {
     type: InputType.DEFAULT,
   },
 };
 
-export const ERROR: InputStory = {
+export const Error: InputStory = {
   args: {
     type: InputType.ERROR,
   },
 };
 
-export const VALIDATE: InputStory = {
+export const Validate: InputStory = {
   args: {
     type: InputType.VALIDATE,
   },
 };
 
-export const DISABLED: InputStory = {
+export const Disabled: InputStory = {
   args: {
     type: InputType.DISABLED,
   },
 };
 
-export const PASSWORD: InputStory = {
+export const Password: InputStory = {
   args: {
     type: InputType.PASSWORD,
   },

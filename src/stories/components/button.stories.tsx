@@ -10,9 +10,7 @@ const meta = {
   argTypes: {
     type: {
       options: Object.values(TypeProps),
-    },
-    onClick: {
-      action: () => console.log('yay'),
+      onClick: { action: 'clicked' },
     },
   },
 } satisfies Meta<typeof Button>;

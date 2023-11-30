@@ -12,9 +12,7 @@ const config: StorybookConfig = {
     ),
   ],
   framework: {
-    name: path.dirname(
-      require.resolve(path.join('@storybook/react-vite', 'package.json')),
-    ),
+    name: '@storybook/react-vite',
     options: {},
   },
   docs: {

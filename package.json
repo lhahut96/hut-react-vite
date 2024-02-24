@@ -54,7 +54,7 @@
     "vite-tsconfig-paths": "^4.3.1",
     "yarn-upgrade-all": "^0.7.2"
   },
-  "packageManager": "yarn@3.5.1",
+  "packageManager": "pnpm@8.14.1",
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
       "npx prettier --write",

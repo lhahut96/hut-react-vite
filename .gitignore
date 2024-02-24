@@ -11,6 +11,7 @@ node_modules
 .yarn/cache
 dist
 dist-ssr
+storybook-static
 *.local
 
 # Editor directories and files

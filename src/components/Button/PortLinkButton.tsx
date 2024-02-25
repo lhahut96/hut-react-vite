@@ -1,14 +1,24 @@
 import { ButtonTypeProps } from './ButtonConstant.ts';
+import youtubeSvg from '@/assets/images/icons/Youtube.svg';
+import instagramSvg from '@/assets/images/icons/Instagram.svg';
+import viteSvg from '@/assets/images/icons/vite.svg';
 
 type Props = {
   type: ButtonTypeProps;
   link?: string;
+  icon?: string;
   newTab?: boolean;
   onClick?: () => void;
 };
 
 const Button = (props: Props) => {
-  const { type, link, newTab, onClick } = props;
+  const { type, link, icon, newTab, onClick } = props;
+
+  const svgSourceObject: { [key: string]: string } = {
+    youtube: youtubeSvg,
+    instagram: instagramSvg,
+    vite: viteSvg,
+  };
 
   const colorObject = {
     primary:
@@ -24,7 +34,11 @@ const Button = (props: Props) => {
       href={link}
       target={newTab ? '_blank' : ''}
     >
-      Button with link
+      {icon ? (
+        <img className="fill-blue-port " src={svgSourceObject[icon]}></img>
+      ) : (
+        'Button with link'
+      )}
     </a>
   ) : (
     <button className={buttonClassName} onClick={onClick}>

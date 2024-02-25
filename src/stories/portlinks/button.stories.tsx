@@ -41,6 +41,15 @@ export const LinkNewTab: Story = {
   },
 };
 
+export const LinkYoutube: Story = {
+  args: {
+    type: ButtonTypeProps.PRIMARY,
+    icon: 'youtube',
+    link: 'https://www.portchain.com',
+    newTab: true,
+  },
+};
+
 export const Text: Story = {
   args: {
     type: ButtonTypeProps.TEXT,

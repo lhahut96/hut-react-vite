@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Button from '@/components/Button/PortLinkButton';
+import Button from '@/components/Button/PortLink/PortLinkButton';
 import { ButtonTypeProps } from '@/components/Button/ButtonConstant';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
@@ -45,8 +45,8 @@ export const LinkYoutube: Story = {
   args: {
     type: ButtonTypeProps.PRIMARY,
     icon: 'youtube',
-    link: 'https://www.portchain.com',
     newTab: true,
+    link: 'https://www.portchain.com',
   },
 };
 

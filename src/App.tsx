@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from './vite.svg';
+import YoutubeSVG from './assets/images/icons/youtube.svg?react';
 import './App.css';
 import Input, { InputType } from './components/Input';
 
@@ -24,6 +25,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
         <Input type={InputType.DEFAULT} />
+        <YoutubeSVG />
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </>

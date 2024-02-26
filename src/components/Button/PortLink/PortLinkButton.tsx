@@ -9,12 +9,13 @@ type Props = {
   type: ButtonTypeProps;
   link?: string;
   icon?: string;
+  text?: string;
   newTab?: boolean;
   onClick?: () => void;
 };
 
 const Button = (props: Props) => {
-  const { type, link, icon, newTab, onClick } = props;
+  const { type, link, icon, text, newTab, onClick } = props;
 
   const colorObject = {
     primary:
@@ -52,7 +53,7 @@ const Button = (props: Props) => {
       href={link}
       target={newTab ? '_blank' : ''}
     >
-      {icon ? svgSourceObject[icon] : 'Button with link'}
+      {text ? text : 'Button'}
     </a>
   ) : (
     <button className={buttonClassName} onClick={onClick}>
